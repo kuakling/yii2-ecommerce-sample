@@ -1,0 +1,1240 @@
+[21-May-2017 09:35:06 UTC] PHP Parse error:  syntax error, unexpected 'unction' (T_STRING), expecting function (T_FUNCTION) in /home/ubuntu/workspace/app/backend/models/Product.php on line 29
+[21-May-2017 09:35:06 UTC] PHP Stack trace:
+[21-May-2017 09:35:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[21-May-2017 09:35:06 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[21-May-2017 09:35:06 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[21-May-2017 09:35:06 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[21-May-2017 09:35:06 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[21-May-2017 09:35:06 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[21-May-2017 09:35:06 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[21-May-2017 09:35:06 UTC] PHP   8. backend\controllers\ProductController->actionCreate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[21-May-2017 09:35:06 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:66
+[21-May-2017 09:35:06 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:66
+[21-May-2017 09:44:36 UTC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\ActiveField::inline() does not exist' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Act...', 'inline')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Act...')
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem('/home/ubuntu/wo...', 25, 'yii\widgets\Act...', 'inline', Array, 3)
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownMethodException))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#13 {main}
+Previous exception:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\widgets\ActiveField::inline()' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Component.php:290
+Stack trace:
+#0 /home/ubuntu/workspace/app/backend/views/product/_form.php(25): yii\base\Component->__call('inline', Array)
+#1 /home/ubuntu/workspace/app/backend/views/product/_form.php(25): yii\widgets\ActiveField->inline()
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, NULL)
+#5 /home/ubuntu/workspace/app/backend/views/product/create.php(19): yii\base\View->render('_form', Array)
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(backend\controllers\ProductController))
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\ProductController))
+#10 /home/ubuntu/workspace/app/backend/controllers/ProductController.php(73): yii\base\Controller->render('create', Array)
+#11 [internal function]: backend\controllers\ProductController->actionCreate()
+#12 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#15 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/create', Array)
+#16 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /home/ubuntu/workspace/app/backend/web/index.php(17): yii\base\Application->run()
+#18 {main}
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_REFERER' => 'https://yii2-ecomerce-sample-kuakling.c9users.io/admin/product/index',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8',
+    'HTTP_COOKIE' => '_csrf-frontend=30ce1dcf5e6f6cd0fb65fc95ad099680ec684e9348dd3f8b2a2ca0b682c84c64a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mhVlrtm2wNzQ30Kg_gKPpZlE1dvEK1Mn%22%3B%7D; _csrf-backend=da6fde49a7913c5cf1738b8cf5f5a22826a95c771b4f81050dce9c9676f6a03da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_gCg8Gyvc_AlKOVNytigUWAjgy4Ir0Cb%22%3B%7D; advanced-frontend=juhvqmc8ok6f0n1cou3j9m9jr1; XDEBUG_SESSION=cloud9ide; _identity-frontend=227f409709fa39421af72fb2ade6e6c80bb0c7f60babad06c565b47eb0286491a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D; advanced-backend=rb2qpp0ktj5lskcfd85uhgbcv4; _identity-backend=1e52f245af982dfe9b77f66e91a61e8cbf197afbcb21faa0bed0481d572b9721a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_REGION' => 'ae',
+    'HTTP_X_FORWARDED_FOR' => '113.53.187.115',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.7.3/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2-ecomerce-sample-kuakling.c9users.io Port 443</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'SERVER_ADDR' => '172.17.0.87',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '10.240.0.230',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/app/backend/web/index.php',
+    'REMOTE_PORT' => '51932',
+    'REDIRECT_URL' => '/backend/web//product/create',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/product/create',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1495359876.90799999237060546875,
+    'REQUEST_TIME' => 1495359876,
+]
+[21-May-2017 09:50:50 UTC] PHP Fatal error:  Class 'backend\models\TimestampBehavior' not found in /home/ubuntu/workspace/app/backend/models/ProductCategory.php on line 31
+[21-May-2017 09:50:50 UTC] PHP Stack trace:
+[21-May-2017 09:50:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[21-May-2017 09:50:50 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[21-May-2017 09:50:50 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[21-May-2017 09:50:50 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[21-May-2017 09:50:50 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[21-May-2017 09:50:50 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[21-May-2017 09:50:50 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[21-May-2017 09:50:50 UTC] PHP   8. backend\controllers\ProductCategoryController->actionCreate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[21-May-2017 09:50:50 UTC] PHP   9. yii\base\Object->__construct() /home/ubuntu/workspace/app/backend/controllers/ProductCategoryController.php:66
+[21-May-2017 09:50:50 UTC] PHP  10. yii\db\BaseActiveRecord->init() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Object.php:107
+[21-May-2017 09:50:50 UTC] PHP  11. yii\base\Component->trigger() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/BaseActiveRecord.php:890
+[21-May-2017 09:50:50 UTC] PHP  12. yii\base\Component->ensureBehaviors() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Component.php:533
+[21-May-2017 09:50:50 UTC] PHP  13. backend\models\ProductCategory->behaviors() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Component.php:650
+[21-May-2017 10:02:33 UTC] PHP Fatal error:  Call to a member function getCategories() on a non-object in /home/ubuntu/workspace/app/backend/views/product/_form.php on line 17
+[21-May-2017 10:02:33 UTC] PHP Stack trace:
+[21-May-2017 10:02:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[21-May-2017 10:02:33 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[21-May-2017 10:02:33 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[21-May-2017 10:02:33 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[21-May-2017 10:02:33 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[21-May-2017 10:02:33 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[21-May-2017 10:02:33 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[21-May-2017 10:02:33 UTC] PHP   8. backend\controllers\ProductController->actionCreate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[21-May-2017 10:02:33 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:73
+[21-May-2017 10:02:33 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:381
+[21-May-2017 10:02:33 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[21-May-2017 10:02:33 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[21-May-2017 10:02:33 UTC] PHP  13. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[21-May-2017 10:02:33 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/app/backend/views/product/create.php:19
+[21-May-2017 10:02:33 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[21-May-2017 10:02:33 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[21-May-2017 10:02:33 UTC] PHP  17. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[21-May-2017 10:06:22 UTC] PHP Fatal error:  Call to a member function getCategories() on a non-object in /home/ubuntu/workspace/app/backend/views/product/_form.php on line 18
+[21-May-2017 10:06:22 UTC] PHP Stack trace:
+[21-May-2017 10:06:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[21-May-2017 10:06:22 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[21-May-2017 10:06:22 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[21-May-2017 10:06:22 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[21-May-2017 10:06:22 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[21-May-2017 10:06:22 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[21-May-2017 10:06:22 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[21-May-2017 10:06:22 UTC] PHP   8. backend\controllers\ProductController->actionCreate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[21-May-2017 10:06:22 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:73
+[21-May-2017 10:06:22 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:381
+[21-May-2017 10:06:22 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[21-May-2017 10:06:22 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[21-May-2017 10:06:22 UTC] PHP  13. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[21-May-2017 10:06:22 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/app/backend/views/product/create.php:19
+[21-May-2017 10:06:22 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[21-May-2017 10:06:22 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[21-May-2017 10:06:22 UTC] PHP  17. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[21-May-2017 10:06:59 UTC] PHP Fatal error:  Call to a member function getCategories() on a non-object in /home/ubuntu/workspace/app/backend/views/product/_form.php on line 18
+[21-May-2017 10:06:59 UTC] PHP Stack trace:
+[21-May-2017 10:06:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[21-May-2017 10:06:59 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[21-May-2017 10:06:59 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[21-May-2017 10:06:59 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[21-May-2017 10:06:59 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[21-May-2017 10:06:59 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[21-May-2017 10:06:59 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[21-May-2017 10:06:59 UTC] PHP   8. backend\controllers\ProductController->actionCreate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[21-May-2017 10:06:59 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:73
+[21-May-2017 10:06:59 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:381
+[21-May-2017 10:06:59 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[21-May-2017 10:06:59 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[21-May-2017 10:06:59 UTC] PHP  13. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[21-May-2017 10:06:59 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/app/backend/views/product/create.php:19
+[21-May-2017 10:06:59 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[21-May-2017 10:06:59 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[21-May-2017 10:06:59 UTC] PHP  17. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[21-May-2017 10:12:03 UTC] PHP Fatal error:  Class 'dosamigos\ckeditor\CKEditor' not found in /home/ubuntu/workspace/app/backend/views/product/_form.php on line 21
+[21-May-2017 10:12:03 UTC] PHP Stack trace:
+[21-May-2017 10:12:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[21-May-2017 10:12:03 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[21-May-2017 10:12:03 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[21-May-2017 10:12:03 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[21-May-2017 10:12:03 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[21-May-2017 10:12:03 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[21-May-2017 10:12:03 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[21-May-2017 10:12:03 UTC] PHP   8. backend\controllers\ProductController->actionCreate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[21-May-2017 10:12:03 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:73
+[21-May-2017 10:12:03 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:381
+[21-May-2017 10:12:03 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[21-May-2017 10:12:03 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[21-May-2017 10:12:03 UTC] PHP  13. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[21-May-2017 10:12:03 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/app/backend/views/product/create.php:19
+[21-May-2017 10:12:03 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[21-May-2017 10:12:03 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[21-May-2017 10:12:03 UTC] PHP  17. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[21-May-2017 10:14:31 UTC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\widgets\Bas...', 'yii\widgets\{cl...', Array, 10)
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\InvalidParamException))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#13 {main}
+Previous exception:
+exception 'yii\base\InvalidParamException' with message 'Unknown format type: number' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/i18n/Formatter.php:318
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\i18n\Formatter->format(23900, 'number')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Product), 1, 0)
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(backend\models\Product), 1, 0)
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(backend\models\Product), 1, 0)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#8 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\w+}/', Object(Closure), '{summary}?{item...')
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#12 /home/ubuntu/workspace/app/backend/views/product/index.php(41): yii\base\Widget::widget(Array)
+#13 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#14 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#15 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(backend\controllers\ProductController))
+#16 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\ProductController))
+#17 /home/ubuntu/workspace/app/backend/controllers/ProductController.php(44): yii\base\Controller->render('index', Array)
+#18 [internal function]: backend\controllers\ProductController->actionIndex()
+#19 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#21 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#22 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/index', Array)
+#23 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /home/ubuntu/workspace/app/backend/web/index.php(17): yii\base\Application->run()
+#25 {main}
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_REFERER' => 'https://yii2-ecomerce-sample-kuakling.c9users.io/admin/product-category/index',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8',
+    'HTTP_COOKIE' => '_csrf-frontend=30ce1dcf5e6f6cd0fb65fc95ad099680ec684e9348dd3f8b2a2ca0b682c84c64a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mhVlrtm2wNzQ30Kg_gKPpZlE1dvEK1Mn%22%3B%7D; _csrf-backend=da6fde49a7913c5cf1738b8cf5f5a22826a95c771b4f81050dce9c9676f6a03da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_gCg8Gyvc_AlKOVNytigUWAjgy4Ir0Cb%22%3B%7D; advanced-frontend=juhvqmc8ok6f0n1cou3j9m9jr1; _identity-frontend=227f409709fa39421af72fb2ade6e6c80bb0c7f60babad06c565b47eb0286491a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D; advanced-backend=rb2qpp0ktj5lskcfd85uhgbcv4; XDEBUG_SESSION=cloud9ide; _identity-backend=1e52f245af982dfe9b77f66e91a61e8cbf197afbcb21faa0bed0481d572b9721a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_REGION' => 'ae',
+    'HTTP_X_FORWARDED_FOR' => '113.53.187.115',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.7.3/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2-ecomerce-sample-kuakling.c9users.io Port 443</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'SERVER_ADDR' => '172.17.0.87',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '10.240.1.16',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/app/backend/web/index.php',
+    'REMOTE_PORT' => '40898',
+    'REDIRECT_URL' => '/backend/web//product/index',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/product/index',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1495361671.26200008392333984375,
+    'REQUEST_TIME' => 1495361671,
+]
+[21-May-2017 10:16:19 UTC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\widgets\Bas...', 'yii\widgets\{cl...', Array, 12)
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\InvalidParamException))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#13 {main}
+Previous exception:
+exception 'yii\base\InvalidParamException' with message 'Formatting currency value failed: 1 Number formatting failed: U_ILLEGAL_ARGUMENT_ERROR' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/i18n/Formatter.php:1071
+Stack trace:
+#0 [internal function]: yii\i18n\Formatter->asCurrency(23900, 'TH')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/i18n/Formatter.php(316): call_user_func_array(Array, Array)
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\i18n\Formatter->format(23900, Array)
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Product), 1, 0)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(backend\models\Product), 1, 0)
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(backend\models\Product), 1, 0)
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#10 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\w+}/', Object(Closure), '{summary}?{item...')
+#12 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#13 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#14 /home/ubuntu/workspace/app/backend/views/product/index.php(45): yii\base\Widget::widget(Array)
+#15 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#16 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#17 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(backend\controllers\ProductController))
+#18 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\ProductController))
+#19 /home/ubuntu/workspace/app/backend/controllers/ProductController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\ProductController->actionIndex()
+#21 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#22 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#23 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#24 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/index', Array)
+#25 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /home/ubuntu/workspace/app/backend/web/index.php(17): yii\base\Application->run()
+#27 {main}
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_REFERER' => 'https://yii2-ecomerce-sample-kuakling.c9users.io/admin/product-category/index',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8',
+    'HTTP_COOKIE' => '_csrf-frontend=30ce1dcf5e6f6cd0fb65fc95ad099680ec684e9348dd3f8b2a2ca0b682c84c64a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mhVlrtm2wNzQ30Kg_gKPpZlE1dvEK1Mn%22%3B%7D; _csrf-backend=da6fde49a7913c5cf1738b8cf5f5a22826a95c771b4f81050dce9c9676f6a03da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_gCg8Gyvc_AlKOVNytigUWAjgy4Ir0Cb%22%3B%7D; advanced-frontend=juhvqmc8ok6f0n1cou3j9m9jr1; _identity-frontend=227f409709fa39421af72fb2ade6e6c80bb0c7f60babad06c565b47eb0286491a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D; advanced-backend=rb2qpp0ktj5lskcfd85uhgbcv4; XDEBUG_SESSION=cloud9ide; _identity-backend=1e52f245af982dfe9b77f66e91a61e8cbf197afbcb21faa0bed0481d572b9721a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_REGION' => 'ae',
+    'HTTP_X_FORWARDED_FOR' => '113.53.187.115',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.7.3/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2-ecomerce-sample-kuakling.c9users.io Port 443</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'SERVER_ADDR' => '172.17.0.87',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '10.240.1.12',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/app/backend/web/index.php',
+    'REMOTE_PORT' => '33564',
+    'REDIRECT_URL' => '/backend/web//product/index',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/product/index',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1495361779.6740000247955322265625,
+    'REQUEST_TIME' => 1495361779,
+]
+[21-May-2017 10:17:14 UTC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\widgets\Bas...', 'yii\widgets\{cl...', Array, 10)
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\InvalidParamException))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#13 {main}
+Previous exception:
+exception 'yii\base\InvalidParamException' with message 'Unknown format type: float' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/i18n/Formatter.php:318
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\i18n\Formatter->format(10, 'float')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Product), 1, 0)
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(backend\models\Product), 1, 0)
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(backend\models\Product), 1, 0)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#8 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\w+}/', Object(Closure), '{summary}?{item...')
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#12 /home/ubuntu/workspace/app/backend/views/product/index.php(44): yii\base\Widget::widget(Array)
+#13 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#14 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#15 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(backend\controllers\ProductController))
+#16 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\ProductController))
+#17 /home/ubuntu/workspace/app/backend/controllers/ProductController.php(44): yii\base\Controller->render('index', Array)
+#18 [internal function]: backend\controllers\ProductController->actionIndex()
+#19 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#21 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#22 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/index', Array)
+#23 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /home/ubuntu/workspace/app/backend/web/index.php(17): yii\base\Application->run()
+#25 {main}
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_REFERER' => 'https://yii2-ecomerce-sample-kuakling.c9users.io/admin/product-category/index',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8',
+    'HTTP_COOKIE' => '_csrf-frontend=30ce1dcf5e6f6cd0fb65fc95ad099680ec684e9348dd3f8b2a2ca0b682c84c64a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mhVlrtm2wNzQ30Kg_gKPpZlE1dvEK1Mn%22%3B%7D; _csrf-backend=da6fde49a7913c5cf1738b8cf5f5a22826a95c771b4f81050dce9c9676f6a03da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_gCg8Gyvc_AlKOVNytigUWAjgy4Ir0Cb%22%3B%7D; advanced-frontend=juhvqmc8ok6f0n1cou3j9m9jr1; _identity-frontend=227f409709fa39421af72fb2ade6e6c80bb0c7f60babad06c565b47eb0286491a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D; advanced-backend=rb2qpp0ktj5lskcfd85uhgbcv4; XDEBUG_SESSION=cloud9ide; _identity-backend=1e52f245af982dfe9b77f66e91a61e8cbf197afbcb21faa0bed0481d572b9721a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_REGION' => 'ae',
+    'HTTP_X_FORWARDED_FOR' => '113.53.187.115',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.7.3/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2-ecomerce-sample-kuakling.c9users.io Port 443</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'SERVER_ADDR' => '172.17.0.87',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '10.240.1.14',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/app/backend/web/index.php',
+    'REMOTE_PORT' => '56588',
+    'REDIRECT_URL' => '/backend/web//product/index',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/product/index',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1495361834.566999912261962890625,
+    'REQUEST_TIME' => 1495361834,
+]
+[21-May-2017 10:17:26 UTC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\widgets\Bas...', 'yii\widgets\{cl...', Array, 10)
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\InvalidParamException))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#13 {main}
+Previous exception:
+exception 'yii\base\InvalidParamException' with message 'Unknown format type: num' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/i18n/Formatter.php:318
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\i18n\Formatter->format(10, 'num')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Product), 1, 0)
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(backend\models\Product), 1, 0)
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(backend\models\Product), 1, 0)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#8 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\w+}/', Object(Closure), '{summary}?{item...')
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#12 /home/ubuntu/workspace/app/backend/views/product/index.php(44): yii\base\Widget::widget(Array)
+#13 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#14 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#15 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(backend\controllers\ProductController))
+#16 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\ProductController))
+#17 /home/ubuntu/workspace/app/backend/controllers/ProductController.php(44): yii\base\Controller->render('index', Array)
+#18 [internal function]: backend\controllers\ProductController->actionIndex()
+#19 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#21 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#22 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/index', Array)
+#23 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /home/ubuntu/workspace/app/backend/web/index.php(17): yii\base\Application->run()
+#25 {main}
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_REFERER' => 'https://yii2-ecomerce-sample-kuakling.c9users.io/admin/product-category/index',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8',
+    'HTTP_COOKIE' => '_csrf-frontend=30ce1dcf5e6f6cd0fb65fc95ad099680ec684e9348dd3f8b2a2ca0b682c84c64a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mhVlrtm2wNzQ30Kg_gKPpZlE1dvEK1Mn%22%3B%7D; _csrf-backend=da6fde49a7913c5cf1738b8cf5f5a22826a95c771b4f81050dce9c9676f6a03da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_gCg8Gyvc_AlKOVNytigUWAjgy4Ir0Cb%22%3B%7D; advanced-frontend=juhvqmc8ok6f0n1cou3j9m9jr1; _identity-frontend=227f409709fa39421af72fb2ade6e6c80bb0c7f60babad06c565b47eb0286491a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D; advanced-backend=rb2qpp0ktj5lskcfd85uhgbcv4; XDEBUG_SESSION=cloud9ide; _identity-backend=1e52f245af982dfe9b77f66e91a61e8cbf197afbcb21faa0bed0481d572b9721a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_REGION' => 'ae',
+    'HTTP_X_FORWARDED_FOR' => '113.53.187.115',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.7.3/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2-ecomerce-sample-kuakling.c9users.io Port 443</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'SERVER_ADDR' => '172.17.0.87',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '10.240.1.12',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/app/backend/web/index.php',
+    'REMOTE_PORT' => '34400',
+    'REDIRECT_URL' => '/backend/web//product/index',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/product/index',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1495361846.4440000057220458984375,
+    'REQUEST_TIME' => 1495361846,
+]
+[21-May-2017 10:17:42 UTC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\widgets\Bas...', 'yii\widgets\{cl...', Array, 10)
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\InvalidParamException))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#13 {main}
+Previous exception:
+exception 'yii\base\InvalidParamException' with message 'Unknown format type: double' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/i18n/Formatter.php:318
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\i18n\Formatter->format(10, 'double')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Product), 1, 0)
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(backend\models\Product), 1, 0)
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(backend\models\Product), 1, 0)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#8 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\w+}/', Object(Closure), '{summary}?{item...')
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#12 /home/ubuntu/workspace/app/backend/views/product/index.php(44): yii\base\Widget::widget(Array)
+#13 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#14 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#15 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(backend\controllers\ProductController))
+#16 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\ProductController))
+#17 /home/ubuntu/workspace/app/backend/controllers/ProductController.php(44): yii\base\Controller->render('index', Array)
+#18 [internal function]: backend\controllers\ProductController->actionIndex()
+#19 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#21 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#22 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/index', Array)
+#23 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /home/ubuntu/workspace/app/backend/web/index.php(17): yii\base\Application->run()
+#25 {main}
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_REFERER' => 'https://yii2-ecomerce-sample-kuakling.c9users.io/admin/product-category/index',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8',
+    'HTTP_COOKIE' => '_csrf-frontend=30ce1dcf5e6f6cd0fb65fc95ad099680ec684e9348dd3f8b2a2ca0b682c84c64a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mhVlrtm2wNzQ30Kg_gKPpZlE1dvEK1Mn%22%3B%7D; _csrf-backend=da6fde49a7913c5cf1738b8cf5f5a22826a95c771b4f81050dce9c9676f6a03da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_gCg8Gyvc_AlKOVNytigUWAjgy4Ir0Cb%22%3B%7D; advanced-frontend=juhvqmc8ok6f0n1cou3j9m9jr1; _identity-frontend=227f409709fa39421af72fb2ade6e6c80bb0c7f60babad06c565b47eb0286491a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D; advanced-backend=rb2qpp0ktj5lskcfd85uhgbcv4; XDEBUG_SESSION=cloud9ide; _identity-backend=1e52f245af982dfe9b77f66e91a61e8cbf197afbcb21faa0bed0481d572b9721a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_REGION' => 'ae',
+    'HTTP_X_FORWARDED_FOR' => '113.53.187.115',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.7.3/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2-ecomerce-sample-kuakling.c9users.io Port 443</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'SERVER_ADDR' => '172.17.0.87',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '10.240.1.16',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/app/backend/web/index.php',
+    'REMOTE_PORT' => '42420',
+    'REDIRECT_URL' => '/backend/web//product/index',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/product/index',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1495361861.9240000247955322265625,
+    'REQUEST_TIME' => 1495361861,
+]
+[21-May-2017 10:23:46 UTC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\widgets\Bas...', 'yii\widgets\{cl...', Array, 19)
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#13 {main}
+Previous exception:
+exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category_id' in 'where clause'' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/Query.php(253): yii\db\Command->queryOne()
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/ActiveRelationTrait.php(158): yii\db\ActiveQuery->one()
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/BaseActiveRecord.php(288): yii\db\ActiveQuery->findFor('<span class="st...', Object(backend\models\Product))
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('<span class="st...')
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(202): yii\helpers\BaseArrayHelper::getValue(Object(backend\models\Product), '<span class="st...', '<span class="ke...')
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/DataColumn.php(216): yii\helpers\BaseArrayHelper::getValue(Object(backend\models\Product), '<span class="st...')
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(backend\models\Product), '<span class="nu...', '<span class="nu...')
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Product), '<span class="nu...', '<span class="nu...')
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(backend\models\Product), '<span class="nu...', '<span class="nu...')
+#12 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(backend\models\Product), '<span class="nu...', '<span class="nu...')
+#13 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#14 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#15 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('<span class="st...')
+#16 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('<span class="st...')
+#17 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#18 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\w+}/', Object(Closure), '{summary}?{item...')
+#19 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#20 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#21 /home/ubuntu/workspace/app/backend/views/product/index.php(49): yii\base\Widget::widget(Array)
+#22 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#23 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#24 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(backend\controllers\ProductController))
+#25 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\ProductController))
+#26 /home/ubuntu/workspace/app/backend/controllers/ProductController.php(44): yii\base\Controller->render('index', Array)
+#27 [internal function]: backend\controllers\ProductController->actionIndex()
+#28 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#29 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#30 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#31 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/index', Array)
+#32 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /home/ubuntu/workspace/app/backend/web/index.php(17): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category_id' in 'where clause'
+The SQL being executed was: SELECT * FROM `product_category` WHERE `category_id`=1' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/Query.php(253): yii\db\Command->queryOne()
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/ActiveRelationTrait.php(158): yii\db\ActiveQuery->one()
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/db/BaseActiveRecord.php(288): yii\db\ActiveQuery->findFor('<span class="st...', Object(backend\models\Product))
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('<span class="st...')
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(202): yii\helpers\BaseArrayHelper::getValue(Object(backend\models\Product), '<span class="st...', '<span class="ke...')
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/DataColumn.php(216): yii\helpers\BaseArrayHelper::getValue(Object(backend\models\Product), '<span class="st...')
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(backend\models\Product), '<span class="nu...', '<span class="nu...')
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Product), '<span class="nu...', '<span class="nu...')
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(backend\models\Product), '<span class="nu...', '<span class="nu...')
+#12 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(backend\models\Product), '<span class="nu...', '<span class="nu...')
+#13 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#14 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#15 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('<span class="st...')
+#16 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('<span class="st...')
+#17 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#18 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\w+}/', Object(Closure), '{summary}?{item...')
+#19 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#20 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#21 /home/ubuntu/workspace/app/backend/views/product/index.php(49): yii\base\Widget::widget(Array)
+#22 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#23 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#24 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(backend\controllers\ProductController))
+#25 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\ProductController))
+#26 /home/ubuntu/workspace/app/backend/controllers/ProductController.php(44): yii\base\Controller->render('index', Array)
+#27 [internal function]: backend\controllers\ProductController->actionIndex()
+#28 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#29 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#30 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#31 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/index', Array)
+#32 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /home/ubuntu/workspace/app/backend/web/index.php(17): yii\base\Application->run()
+#34 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'category_id' in 'where clause'
+)
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_REFERER' => 'https://yii2-ecomerce-sample-kuakling.c9users.io/admin/product/index?ProductSearch%5Bid%5D=&ProductSearch%5Btitle%5D=&ProductSearch%5Bcategory_id%5D=&ProductSearch%5Bprice%5D=&ProductSearch%5Bbalance%5D=&ProductSearch%5Bstatus%5D=0',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8',
+    'HTTP_COOKIE' => '_csrf-frontend=30ce1dcf5e6f6cd0fb65fc95ad099680ec684e9348dd3f8b2a2ca0b682c84c64a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mhVlrtm2wNzQ30Kg_gKPpZlE1dvEK1Mn%22%3B%7D; _csrf-backend=da6fde49a7913c5cf1738b8cf5f5a22826a95c771b4f81050dce9c9676f6a03da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_gCg8Gyvc_AlKOVNytigUWAjgy4Ir0Cb%22%3B%7D; advanced-frontend=juhvqmc8ok6f0n1cou3j9m9jr1; _identity-frontend=227f409709fa39421af72fb2ade6e6c80bb0c7f60babad06c565b47eb0286491a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D; advanced-backend=rb2qpp0ktj5lskcfd85uhgbcv4; XDEBUG_SESSION=cloud9ide; _identity-backend=1e52f245af982dfe9b77f66e91a61e8cbf197afbcb21faa0bed0481d572b9721a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_REGION' => 'ae',
+    'HTTP_X_FORWARDED_FOR' => '113.53.187.115',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.7.3/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2-ecomerce-sample-kuakling.c9users.io Port 443</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'SERVER_ADDR' => '172.17.0.87',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '10.240.0.33',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/app/backend/web/index.php',
+    'REMOTE_PORT' => '56854',
+    'REDIRECT_QUERY_STRING' => 'ProductSearch%5Bid%5D=&ProductSearch%5Btitle%5D=&ProductSearch%5Bcategory_id%5D=&ProductSearch%5Bprice%5D=&ProductSearch%5Bbalance%5D=&ProductSearch%5Bstatus%5D=',
+    'REDIRECT_URL' => '/backend/web//product/index',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'ProductSearch%5Bid%5D=&ProductSearch%5Btitle%5D=&ProductSearch%5Bcategory_id%5D=&ProductSearch%5Bprice%5D=&ProductSearch%5Bbalance%5D=&ProductSearch%5Bstatus%5D=',
+    'REQUEST_URI' => '/admin/product/index?ProductSearch%5Bid%5D=&ProductSearch%5Btitle%5D=&ProductSearch%5Bcategory_id%5D=&ProductSearch%5Bprice%5D=&ProductSearch%5Bbalance%5D=&ProductSearch%5Bstatus%5D=',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1495362226.414000034332275390625,
+    'REQUEST_TIME' => 1495362226,
+]
+[24-May-2017 08:49:10 UTC] PHP Fatal error:  Class 'Product' not found in /home/ubuntu/workspace/app/backend/views/cart/view.php on line 57
+[24-May-2017 08:49:10 UTC] PHP Stack trace:
+[24-May-2017 08:49:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[24-May-2017 08:49:10 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[24-May-2017 08:49:10 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[24-May-2017 08:49:10 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[24-May-2017 08:49:10 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[24-May-2017 08:49:10 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[24-May-2017 08:49:10 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[24-May-2017 08:49:10 UTC] PHP   8. backend\controllers\CartController->actionView() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[24-May-2017 08:49:10 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/app/backend/controllers/CartController.php:56
+[24-May-2017 08:49:10 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:381
+[24-May-2017 08:49:10 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[24-May-2017 08:49:10 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[24-May-2017 08:49:10 UTC] PHP  13. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[24-May-2017 09:02:40 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /home/ubuntu/workspace/app/backend/views/cart/index.php on line 34
+[24-May-2017 09:02:40 UTC] PHP Stack trace:
+[24-May-2017 09:02:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[24-May-2017 09:02:40 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[24-May-2017 09:02:40 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[24-May-2017 09:02:40 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[24-May-2017 09:02:40 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[24-May-2017 09:02:40 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[24-May-2017 09:02:40 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[24-May-2017 09:02:40 UTC] PHP   8. backend\controllers\CartController->actionIndex() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[24-May-2017 09:02:40 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/app/backend/controllers/CartController.php:44
+[24-May-2017 09:02:40 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:381
+[24-May-2017 09:02:40 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[24-May-2017 09:02:40 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[24-May-2017 09:06:22 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /home/ubuntu/workspace/app/backend/views/cart/index.php on line 35
+[24-May-2017 09:06:22 UTC] PHP Stack trace:
+[24-May-2017 09:06:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[24-May-2017 09:06:22 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[24-May-2017 09:06:22 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[24-May-2017 09:06:22 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[24-May-2017 09:06:22 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[24-May-2017 09:06:22 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[24-May-2017 09:06:22 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[24-May-2017 09:06:22 UTC] PHP   8. backend\controllers\CartController->actionIndex() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[24-May-2017 09:06:22 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/app/backend/controllers/CartController.php:44
+[24-May-2017 09:06:22 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:381
+[24-May-2017 09:06:22 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[24-May-2017 09:06:22 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 07:17:59 UTC] PHP Fatal error:  Class 'kartik\widgets\FileInput' not found in /home/ubuntu/workspace/app/backend/views/product/_form.php on line 31
+[02-Jun-2017 07:17:59 UTC] PHP Stack trace:
+[02-Jun-2017 07:17:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[02-Jun-2017 07:17:59 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[02-Jun-2017 07:17:59 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[02-Jun-2017 07:17:59 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[02-Jun-2017 07:17:59 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[02-Jun-2017 07:17:59 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[02-Jun-2017 07:17:59 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 07:17:59 UTC] PHP   8. backend\controllers\ProductController->actionUpdate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 07:17:59 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:92
+[02-Jun-2017 07:17:59 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:381
+[02-Jun-2017 07:17:59 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[02-Jun-2017 07:17:59 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 07:17:59 UTC] PHP  13. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[02-Jun-2017 07:17:59 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/app/backend/views/product/update.php:19
+[02-Jun-2017 07:17:59 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[02-Jun-2017 07:17:59 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 07:17:59 UTC] PHP  17. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[02-Jun-2017 07:21:08 UTC] PHP Fatal error:  Class 'kartik\widgets\FileInput' not found in /home/ubuntu/workspace/app/backend/views/product/_form.php on line 31
+[02-Jun-2017 07:21:08 UTC] PHP Stack trace:
+[02-Jun-2017 07:21:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[02-Jun-2017 07:21:08 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[02-Jun-2017 07:21:08 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[02-Jun-2017 07:21:08 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[02-Jun-2017 07:21:08 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[02-Jun-2017 07:21:08 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[02-Jun-2017 07:21:08 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 07:21:08 UTC] PHP   8. backend\controllers\ProductController->actionUpdate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 07:21:08 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:92
+[02-Jun-2017 07:21:08 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:381
+[02-Jun-2017 07:21:08 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[02-Jun-2017 07:21:08 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 07:21:08 UTC] PHP  13. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[02-Jun-2017 07:21:08 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/app/backend/views/product/update.php:19
+[02-Jun-2017 07:21:08 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[02-Jun-2017 07:21:08 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 07:21:08 UTC] PHP  17. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[02-Jun-2017 07:21:12 UTC] PHP Fatal error:  Class 'kartik\widgets\FileInput' not found in /home/ubuntu/workspace/app/backend/views/product/_form.php on line 31
+[02-Jun-2017 07:21:12 UTC] PHP Stack trace:
+[02-Jun-2017 07:21:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[02-Jun-2017 07:21:12 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[02-Jun-2017 07:21:12 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[02-Jun-2017 07:21:12 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[02-Jun-2017 07:21:12 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[02-Jun-2017 07:21:12 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[02-Jun-2017 07:21:12 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 07:21:12 UTC] PHP   8. backend\controllers\ProductController->actionUpdate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 07:21:12 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:92
+[02-Jun-2017 07:21:12 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:381
+[02-Jun-2017 07:21:12 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[02-Jun-2017 07:21:12 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 07:21:12 UTC] PHP  13. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[02-Jun-2017 07:21:12 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/app/backend/views/product/update.php:19
+[02-Jun-2017 07:21:12 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[02-Jun-2017 07:21:12 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 07:21:12 UTC] PHP  17. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[02-Jun-2017 07:31:47 UTC] PHP Fatal error:  Class 'kartik\widgets\FileInput' not found in /home/ubuntu/workspace/app/backend/views/product/_form.php on line 31
+[02-Jun-2017 07:31:47 UTC] PHP Stack trace:
+[02-Jun-2017 07:31:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[02-Jun-2017 07:31:47 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[02-Jun-2017 07:31:47 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[02-Jun-2017 07:31:47 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[02-Jun-2017 07:31:47 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[02-Jun-2017 07:31:47 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[02-Jun-2017 07:31:47 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 07:31:47 UTC] PHP   8. backend\controllers\ProductController->actionUpdate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 07:31:47 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:92
+[02-Jun-2017 07:31:47 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:381
+[02-Jun-2017 07:31:47 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[02-Jun-2017 07:31:47 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 07:31:47 UTC] PHP  13. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[02-Jun-2017 07:31:47 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/app/backend/views/product/update.php:19
+[02-Jun-2017 07:31:47 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[02-Jun-2017 07:31:47 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 07:31:47 UTC] PHP  17. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[02-Jun-2017 07:31:52 UTC] PHP Fatal error:  Class 'kartik\widgets\FileInput' not found in /home/ubuntu/workspace/app/backend/views/product/_form.php on line 31
+[02-Jun-2017 07:31:52 UTC] PHP Stack trace:
+[02-Jun-2017 07:31:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[02-Jun-2017 07:31:52 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[02-Jun-2017 07:31:52 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[02-Jun-2017 07:31:52 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[02-Jun-2017 07:31:52 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[02-Jun-2017 07:31:52 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[02-Jun-2017 07:31:52 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 07:31:52 UTC] PHP   8. backend\controllers\ProductController->actionUpdate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 07:31:52 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:92
+[02-Jun-2017 07:31:52 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:381
+[02-Jun-2017 07:31:52 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[02-Jun-2017 07:31:52 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 07:31:52 UTC] PHP  13. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[02-Jun-2017 07:31:52 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/app/backend/views/product/update.php:19
+[02-Jun-2017 07:31:52 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[02-Jun-2017 07:31:52 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 07:31:52 UTC] PHP  17. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[02-Jun-2017 07:32:24 UTC] PHP Fatal error:  Class 'kartik\widgets\FileInput' not found in /home/ubuntu/workspace/app/backend/views/product/_form.php on line 31
+[02-Jun-2017 07:32:24 UTC] PHP Stack trace:
+[02-Jun-2017 07:32:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[02-Jun-2017 07:32:24 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[02-Jun-2017 07:32:24 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[02-Jun-2017 07:32:24 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[02-Jun-2017 07:32:24 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[02-Jun-2017 07:32:24 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[02-Jun-2017 07:32:24 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 07:32:24 UTC] PHP   8. backend\controllers\ProductController->actionUpdate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 07:32:24 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:92
+[02-Jun-2017 07:32:24 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:381
+[02-Jun-2017 07:32:24 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[02-Jun-2017 07:32:24 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 07:32:24 UTC] PHP  13. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[02-Jun-2017 07:32:24 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/app/backend/views/product/update.php:19
+[02-Jun-2017 07:32:24 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[02-Jun-2017 07:32:24 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 07:32:24 UTC] PHP  17. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[02-Jun-2017 07:36:56 UTC] PHP Parse error:  syntax error, unexpected ''multiple'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/ubuntu/workspace/app/backend/views/product/_form.php on line 38
+[02-Jun-2017 07:36:56 UTC] PHP Stack trace:
+[02-Jun-2017 07:36:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[02-Jun-2017 07:36:56 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[02-Jun-2017 07:36:56 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[02-Jun-2017 07:36:56 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[02-Jun-2017 07:36:56 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[02-Jun-2017 07:36:56 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[02-Jun-2017 07:36:56 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 07:36:56 UTC] PHP   8. backend\controllers\ProductController->actionUpdate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 07:36:56 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:92
+[02-Jun-2017 07:36:56 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:381
+[02-Jun-2017 07:36:56 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[02-Jun-2017 07:36:56 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 07:36:56 UTC] PHP  13. require() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:328
+[02-Jun-2017 07:36:56 UTC] PHP  14. yii\base\View->render() /home/ubuntu/workspace/app/backend/views/product/update.php:19
+[02-Jun-2017 07:36:56 UTC] PHP  15. yii\base\View->renderFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:152
+[02-Jun-2017 07:36:56 UTC] PHP  16. yii\base\View->renderPhpFile() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php:250
+[02-Jun-2017 09:16:26 UTC] PHP Parse error:  syntax error, unexpected 'throw' (T_THROW) in /home/ubuntu/workspace/app/backend/controllers/ProductController.php on line 131
+[02-Jun-2017 09:16:26 UTC] PHP Stack trace:
+[02-Jun-2017 09:16:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[02-Jun-2017 09:16:26 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[02-Jun-2017 09:16:26 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[02-Jun-2017 09:16:26 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[02-Jun-2017 09:16:26 UTC] PHP   5. yii\base\Module->createController() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:517
+[02-Jun-2017 09:16:26 UTC] PHP   6. yii\base\Module->createControllerByID() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:591
+[02-Jun-2017 09:16:26 UTC] PHP   7. class_exists() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:633
+[02-Jun-2017 09:16:26 UTC] PHP   8. spl_autoload_call() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:633
+[02-Jun-2017 09:16:26 UTC] PHP   9. yii\BaseYii::autoload() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:633
+[02-Jun-2017 09:49:21 UTC] PHP Fatal error:  Class 'backend\models\ArrayHelper' not found in /home/ubuntu/workspace/app/backend/models/Product.php on line 185
+[02-Jun-2017 09:49:21 UTC] PHP Stack trace:
+[02-Jun-2017 09:49:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[02-Jun-2017 09:49:21 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[02-Jun-2017 09:49:21 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[02-Jun-2017 09:49:21 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[02-Jun-2017 09:49:21 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[02-Jun-2017 09:49:21 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[02-Jun-2017 09:49:21 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 09:49:21 UTC] PHP   8. backend\controllers\ProductController->actionUpdate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 09:49:21 UTC] PHP   9. backend\models\Product->uploadMultiple() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:91
+[02-Jun-2017 10:00:29 UTC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method backend\models\Product::getPhotoInitialPreview() does not exist' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('backend\models\...', 'getPhotoInitial...')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('backend\models\...')
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem('/home/ubuntu/wo...', 51, 'backend\models\...', 'getPhotoInitial...', Array, 3)
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownMethodException))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#13 {main}
+Previous exception:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: backend\models\Product::getPhotoInitialPreview()' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Component.php:290
+Stack trace:
+#0 /home/ubuntu/workspace/app/backend/views/product/_form.php(51): yii\base\Component->__call('getPhotoInitial...', Array)
+#1 /home/ubuntu/workspace/app/backend/views/product/_form.php(51): backend\models\Product->getPhotoInitialPreview()
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, NULL)
+#5 /home/ubuntu/workspace/app/backend/views/product/update.php(19): yii\base\View->render('_form', Array)
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(backend\controllers\ProductController))
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\ProductController))
+#10 /home/ubuntu/workspace/app/backend/controllers/ProductController.php(96): yii\base\Controller->render('update', Array)
+#11 [internal function]: backend\controllers\ProductController->actionUpdate('2')
+#12 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#15 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/update', Array)
+#16 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /home/ubuntu/workspace/app/backend/web/index.php(17): yii\base\Application->run()
+#18 {main}
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_REFERER' => 'https://yii2-ecomerce-sample-kuakling.c9users.io/admin/product/view?id=2',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8',
+    'HTTP_COOKIE' => '_csrf-frontend=b351beedf8c3f5168b060b187de76504d1968363cd90221afc5661f67e8bd1a3a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2227SldXxGU00TWgJZUEYEDLfFq20JmuMw%22%3B%7D; _csrf-backend=f4a8b40ee247bc251bd771775b1efb99b1713182b0d403e4ca1f3fe12184eabca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224d5Q4FUKucMYgm2pNCBBMZk5CFL3vLet%22%3B%7D; advanced-frontend=34qb6elb5ntbg5vrnm9n03u8m1; advanced-backend=6ma42ratsnlkfeftq8akh36vb5; _identity-backend=1e52f245af982dfe9b77f66e91a61e8cbf197afbcb21faa0bed0481d572b9721a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D; XDEBUG_SESSION=cloud9ide; _identity-frontend=227f409709fa39421af72fb2ade6e6c80bb0c7f60babad06c565b47eb0286491a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_REGION' => 'ae',
+    'HTTP_X_FORWARDED_FOR' => '202.29.145.193',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.7.3/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2-ecomerce-sample-kuakling.c9users.io Port 443</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'SERVER_ADDR' => '172.17.1.4',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '10.240.0.33',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/app/backend/web/index.php',
+    'REMOTE_PORT' => '40892',
+    'REDIRECT_QUERY_STRING' => 'id=2',
+    'REDIRECT_URL' => '/backend/web//product/update',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'id=2',
+    'REQUEST_URI' => '/admin/product/update?id=2',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1496397629.1870000362396240234375,
+    'REQUEST_TIME' => 1496397629,
+]
+[02-Jun-2017 10:03:32 UTC] PHP Parse error:  syntax error, unexpected ''url'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/ubuntu/workspace/app/backend/models/Product.php on line 216
+[02-Jun-2017 10:03:32 UTC] PHP Stack trace:
+[02-Jun-2017 10:03:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[02-Jun-2017 10:03:32 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[02-Jun-2017 10:03:32 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[02-Jun-2017 10:03:32 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[02-Jun-2017 10:03:32 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[02-Jun-2017 10:03:32 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[02-Jun-2017 10:03:32 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 10:03:32 UTC] PHP   8. backend\controllers\ProductController->actionUpdate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 10:03:32 UTC] PHP   9. backend\controllers\ProductController->findModel() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:87
+[02-Jun-2017 10:03:32 UTC] PHP  10. spl_autoload_call() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:122
+[02-Jun-2017 10:03:32 UTC] PHP  11. yii\BaseYii::autoload() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:122
+[02-Jun-2017 10:08:16 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/ubuntu/workspace/app/backend/models/Product.php on line 216
+[02-Jun-2017 10:08:16 UTC] PHP Stack trace:
+[02-Jun-2017 10:08:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/app/backend/web/index.php:0
+[02-Jun-2017 10:08:16 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/app/backend/web/index.php:17
+[02-Jun-2017 10:08:16 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php:380
+[02-Jun-2017 10:08:16 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php:102
+[02-Jun-2017 10:08:16 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php:523
+[02-Jun-2017 10:08:16 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php:156
+[02-Jun-2017 10:08:16 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 10:08:16 UTC] PHP   8. backend\controllers\ProductController->actionUpdate() /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[02-Jun-2017 10:08:16 UTC] PHP   9. backend\controllers\ProductController->findModel() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:87
+[02-Jun-2017 10:08:16 UTC] PHP  10. spl_autoload_call() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:122
+[02-Jun-2017 10:08:16 UTC] PHP  11. yii\BaseYii::autoload() /home/ubuntu/workspace/app/backend/controllers/ProductController.php:122
+[02-Jun-2017 10:18:41 UTC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method backend\models\Product::getOwnPhotosToArray() does not exist' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('backend\models\...', 'getOwnPhotosToA...')
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('backend\models\...')
+#2 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem('/home/ubuntu/wo...', 186, 'backend\models\...', 'getOwnPhotosToA...', Array, 3)
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#9 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownMethodException))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#13 {main}
+Previous exception:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: backend\models\Product::getOwnPhotosToArray()' in /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Component.php:290
+Stack trace:
+#0 /home/ubuntu/workspace/app/backend/models/Product.php(186): yii\base\Component->__call('getOwnPhotosToA...', Array)
+#1 /home/ubuntu/workspace/app/backend/models/Product.php(186): backend\models\Product->getOwnPhotosToArray()
+#2 /home/ubuntu/workspace/app/backend/controllers/ProductController.php(91): backend\models\Product->uploadMultiple(Object(backend\models\Product), 'photos')
+#3 [internal function]: backend\controllers\ProductController->actionUpdate('2')
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/update', Array)
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/ubuntu/workspace/app/backend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'CONTENT_LENGTH' => '52026',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_ORIGIN' => 'https://yii2-ecomerce-sample-kuakling.c9users.io',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarySmpWbacypLdIkSvB',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_REFERER' => 'https://yii2-ecomerce-sample-kuakling.c9users.io/admin/product/update?id=2',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8',
+    'HTTP_COOKIE' => '_csrf-frontend=b351beedf8c3f5168b060b187de76504d1968363cd90221afc5661f67e8bd1a3a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2227SldXxGU00TWgJZUEYEDLfFq20JmuMw%22%3B%7D; _csrf-backend=f4a8b40ee247bc251bd771775b1efb99b1713182b0d403e4ca1f3fe12184eabca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224d5Q4FUKucMYgm2pNCBBMZk5CFL3vLet%22%3B%7D; advanced-frontend=34qb6elb5ntbg5vrnm9n03u8m1; advanced-backend=6ma42ratsnlkfeftq8akh36vb5; XDEBUG_SESSION=cloud9ide; _identity-backend=1e52f245af982dfe9b77f66e91a61e8cbf197afbcb21faa0bed0481d572b9721a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D; _identity-frontend=227f409709fa39421af72fb2ade6e6c80bb0c7f60babad06c565b47eb0286491a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224zDgeprzL2aeGTjVtMQjnP3yH1Bvd8GL%22%2C2592000%5D%22%3B%7D',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_REGION' => 'ae',
+    'HTTP_X_FORWARDED_FOR' => '202.29.145.193',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.7.3/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2-ecomerce-sample-kuakling.c9users.io Port 443</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'SERVER_ADDR' => '172.17.1.4',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '10.240.1.14',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/app/backend/web/index.php',
+    'REMOTE_PORT' => '40658',
+    'REDIRECT_QUERY_STRING' => 'id=2',
+    'REDIRECT_URL' => '/backend/web//product/update',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => 'id=2',
+    'REQUEST_URI' => '/admin/product/update?id=2',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1496398721.7790000438690185546875,
+    'REQUEST_TIME' => 1496398721,
+]
+[05-Jun-2017 02:10:15 UTC] An Error occurred while handling another error:
+exception 'yii\web\ForbiddenHttpException' with message 'คุณไม่ได้รับอนุญาตให้ดำเนินการนี้' in /home/ubuntu/workspace/app/vendor/mdmsoft/yii2-admin/components/AccessControl.php:88
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/mdmsoft/yii2-admin/components/AccessControl.php(73): mdm\admin\components\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/ActionFilter.php(75): mdm\admin\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(144): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/ErrorHandler.php(95): yii\base\Module->runAction('/user/default/e...')
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#9 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#10 {main}
+Previous exception:
+exception 'yii\web\ForbiddenHttpException' with message 'คุณไม่ได้รับอนุญาตให้ดำเนินการนี้' in /home/ubuntu/workspace/app/vendor/mdmsoft/yii2-admin/components/AccessControl.php:88
+Stack trace:
+#0 /home/ubuntu/workspace/app/vendor/mdmsoft/yii2-admin/components/AccessControl.php(73): mdm\admin\components\AccessControl->denyAccess(Object(yii\web\User))
+#1 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/ActionFilter.php(75): mdm\admin\components\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Controller.php(144): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#6 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#7 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user', Array)
+#8 /home/ubuntu/workspace/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/ubuntu/workspace/app/backend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8',
+    'HTTP_COOKIE' => '_csrf-frontend=b351beedf8c3f5168b060b187de76504d1968363cd90221afc5661f67e8bd1a3a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2227SldXxGU00TWgJZUEYEDLfFq20JmuMw%22%3B%7D; _csrf-backend=f4a8b40ee247bc251bd771775b1efb99b1713182b0d403e4ca1f3fe12184eabca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224d5Q4FUKucMYgm2pNCBBMZk5CFL3vLet%22%3B%7D; XDEBUG_SESSION=cloud9ide; advanced-frontend=lf743settr0fjqbrdo189c2s80; advanced-backend=ui4vfcfp0987g345gk3r0qdla6; _identity-backend=25b5d15e818b3b488b3d49cd6040329513aeeb4ff19c893f1a3faf92d9b1190aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22Mq07sjMJvAfMrBPtvGNSElLQ3zT9dfVW%22%2C2592000%5D%22%3B%7D',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_REGION' => 'ae',
+    'HTTP_X_FORWARDED_FOR' => '202.29.145.193',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.7.3/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at yii2-ecomerce-sample-kuakling.c9users.io Port 443</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'yii2-ecomerce-sample-kuakling.c9users.io',
+    'SERVER_ADDR' => '172.17.0.119',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '10.240.1.12',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace/app',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/app/backend/web/index.php',
+    'REMOTE_PORT' => '43760',
+    'REDIRECT_URL' => '/backend/web//user',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/user',
+    'SCRIPT_NAME' => '/backend/web/index.php',
+    'PHP_SELF' => '/backend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1496628615.4249999523162841796875,
+    'REQUEST_TIME' => 1496628615,
+]
